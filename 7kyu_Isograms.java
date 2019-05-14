@@ -6,12 +6,10 @@
 //  isIsogram "moose" == false
 //  isIsogram "aba" == false
 
-import java.util.*;
-
 public class isogram {
-    public static boolean isIsogram(String str) {
-      return str.length() == str.toLowerCase().chars().distinct().count();
-    }
+  public static boolean isIsogram(String str) {
+    return str.length() == str.toLowerCase().chars().distinct().count(); 
+  } 
 }
 
 // FIRST SOLUTION WAS:
