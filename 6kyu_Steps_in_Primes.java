@@ -71,19 +71,19 @@ class StepInPrimes {
   }
     
   private static long findFirstPrimeGreaterThan(long m) {
-  for (long prime : primes) {
-    if (prime >= m) return prime;
-  }
-  return primes.get(0);
+    for (long prime : primes) {
+      if (prime >= m) return prime;
+    }
+    return primes.get(0);
  }
     
   private static long generateNextPrime() {
-  long primeCandidate = (primes.get(primes.size()-1)) + 2;
-  while (!isPrime(primeCandidate)) {
-    primeCandidate +=2;
-  }
-  primes.add(primeCandidate);
-  return primeCandidate;
+    long primeCandidate = (primes.get(primes.size()-1)) + 2;
+    while (!isPrime(primeCandidate)) {
+      primeCandidate +=2;
+    }
+    primes.add(primeCandidate);
+    return primeCandidate;
  }
 
   private static boolean isPrime(long primeCandidate) {
