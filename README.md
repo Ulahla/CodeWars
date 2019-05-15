@@ -7,6 +7,6 @@ The task was to find the next element for an array so that a new average is met.
 <pre><code>
 //  Pseudo Code:
 //  avg = sum of all elements in the array / arr.length;
-//  newAvg = SumOfAllElements + X / array.lenth + 1       
-//  newAvg * array.length +1 = SumOfAllElements + X       
-//  (newAvg * array.length +1) - SumOfAllElements = X</code><pre>
+//  newAvg = SumOfAllElements + X / (array.lenth + 1 )
+//  newAvg * array.length + 1 = SumOfAllElements + X
+//  (newAvg * array.length + 1) - SumOfAllElements = X</code><pre>
